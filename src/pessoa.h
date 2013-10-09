@@ -75,6 +75,7 @@ public:
 	 * @return bool bMorador.
 	 */
 	bool eMorador() const;
+
 };
 
 
