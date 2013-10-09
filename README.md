@@ -5,6 +5,10 @@ Gestao-Condominios
      Projeto de AEDA.
 ===============================
 
+======================================================================================
+ANTES DE COMEÇAR A TRABALHAR FAÇAM SEMPRE PULL, NÃO SE ESQUEÇAM OU VAI DAR CONFLITO. 
+======================================================================================
+
   Vamos usar este repositório para ser mais simples trabalharmos os três juntos sem haver conflitos nos ficheiros e até eventuais perdas de trabalho!
   
   Quanto ao projeto em si, acho que se será importante ir atualizando este ficheiro de texto com informação sobre as "convenções" a usar entre nós de modo a manter o código organizado e coerente. (Fica com péssimo aspeto e é dificíl entender um código em que a coerência é zero). 
