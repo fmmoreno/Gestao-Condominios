@@ -13,6 +13,8 @@ Gestao-Condominios
   
   A documentação deverá estar TODA nos header files. Nos CPP apenas se comenta o código, caso necessário. 
   
+  PROGRAMAR TUDO EM PORTUGUÊS, NÃO FAÇAM UMA COISA PORTUGUÊS-INTERNATIONAL!!! xD
+  
   --> Já documentei o "pessoa.h" se quiserem ver como aquilo funciona. 
   
   Convenções até agora definidas:
