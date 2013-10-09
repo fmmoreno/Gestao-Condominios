@@ -7,12 +7,12 @@
 using namespace std;
 
 /**
- * Classe Pessoa. Contém os membros comuns a todos os tipos de Pessoa: técnico e proprietário.
+ * Classe Pessoa. Contém os membros comuns a todos os tipos de Pessoa: tecnico e proprietario.
  */
 class Pessoa {
 protected:
-	size_t id;	 /**< ID da pessoa para facilitar na organização de todas as pessoas. */
-	string nome; /**< Nome da pessoa, completo ou não. */
+	unsigned int id;	 /**< ID da pessoa para facilitar na organizacao de todas as pessoas. */
+	string nome; 		/**< Nome da pessoa, completo ou nao. */
 
 public:
 	/**
@@ -20,12 +20,12 @@ public:
 	 * @param nome string com nome da pessoa a criar.
 	 * @param id size_t com ID da pessoa a criar.
 	 */
-	Pessoa(string nome, size_t id);
+	Pessoa(string nome, unsigned int id);
 	/**
 	 * Devolve ID de Pessoa.
 	 * @return size_t com ID de Pessoa.
 	 */
-	size_t getId() const;
+	unsigned int getId() const;
 	/**
 	 * Devolve nome de Pessoa.
 	 * @return string com nome de Pessoa.
@@ -69,7 +69,7 @@ public:
 	 * @param id size_t com ID de Proprietario.
 	 * @param bMorador bool True se o proprietario for morador, False em caso contrário.
 	 */
-	Proprietario(string nome, size_t id, bool bMorador);
+	Proprietario(string nome, unsigned int id, bool bMorador);
 	/**
 	 * Devolve valor do booleano bMorador.
 	 * @return bool bMorador.

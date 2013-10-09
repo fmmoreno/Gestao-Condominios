@@ -12,7 +12,7 @@
 #include <string>
 #include <iostream>
 #include <vector>
-//#include "pessoa.h" 						// <- DESCOMENTAR !!!!!!!!!!!!!!!!!!!
+#include "pessoa.h" 						// <- DESCOMENTAR !!!!!!!!!!!!!!!!!!!
 
 using namespace std;
 
@@ -21,32 +21,27 @@ using namespace std;
  */
 class Condominio {
 protected:
-	const size_t area;
-	const size_t andar;
-	//vector<Proprietario *> proprietarios; // <- DESCOMENTAR !!!!!!!!!!!!!!!!!!!
+	const unsigned int area;
+	const unsigned int andar;
+	const unsigned int taxa;
+	vector<Proprietario *> proprietarios; // <- DESCOMENTAR !!!!!!!!!!!!!!!!!!!
 public:
-	Condominio(size_t area, size_t andar);
+	Condominio(unsigned int area, unsigned int andar, unsigned int taxa);
 };
 
 class Residencia: public Condominio {
-	const size_t taxa;						// <- a definir a implementacao
 public:
-	Residencia(size_t area, size_t andar, size_t taxa);
-	size_t getTaxa();
+	Residencia(unsigned int area, unsigned int andar, unsigned int taxa);
 };
 
 class Escritorio: public Condominio {
-	const size_t taxa;						// <- a definir a implementacao
 public:
-	Escritorio(size_t area, size_t andar, size_t taxa);
-	size_t getTaxa();
+	Escritorio(unsigned int area, unsigned int andar, unsigned int taxa);
 };
 
 class Loja: public Condominio {
-	const size_t taxa;						// <- a definir a implementacao
 public:
-	Loja(size_t area, size_t andar, size_t taxa);
-	size_t getTaxa();
+	Loja(unsigned int area, unsigned int andar, unsigned int taxa);
 };
 
 

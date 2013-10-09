@@ -1,17 +1,17 @@
 #include "pessoa.h"
 
-Pessoa::Pessoa(string nome, size_t id) : nome(nome), id(id) {
+Pessoa::Pessoa(string nome, unsigned int id) : nome(nome), id(id) {
 }
 
 string Pessoa::getNome() const {
 	return this->nome;
 }
 
-size_t Pessoa::getId() const {
+unsigned int Pessoa::getId() const {
 	return this->id;
 }
 
-Tecnico::Tecnico(string nome, size_t id, string profissao) :
+Tecnico::Tecnico(string nome, unsigned int id, string profissao) :
 		Pessoa(nome, id), profissao(profissao) {
 }
 

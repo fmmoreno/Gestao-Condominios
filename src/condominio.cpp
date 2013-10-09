@@ -3,19 +3,23 @@
 /*
  * Condominio
  */
-Condominio::Condominio(size_t area, size_t andar): area(area), andar(andar) {}
+Condominio::Condominio(unsigned int area, unsigned int andar, unsigned int taxa):
+		area(area), andar(andar), taxa(taxa) {}
 
 /*
  * Residencia
  */
-Residencia::Residencia(size_t area, size_t andar, size_t taxa): Condominio(area,andar), taxa(taxa) {}
+Residencia::Residencia(unsigned int area, unsigned int andar, unsigned int taxa):
+		Condominio(area,andar,taxa) {}
 
 /*
  * Escritorio
  */
-Escritorio::Escritorio(size_t area, size_t andar, size_t taxa): Condominio(area,andar), taxa(taxa) {}
+Escritorio::Escritorio(unsigned int area, unsigned int andar, unsigned int taxa):
+		Condominio(area,andar,taxa) {}
 
 /*
  * Loja
  */
-Loja::Loja(size_t area, size_t andar, size_t taxa): Condominio(area,andar), taxa(taxa) {}
+Loja::Loja(unsigned int area, unsigned int andar, unsigned int taxa):
+		Condominio(area,andar,taxa) {}
