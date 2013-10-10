@@ -1,6 +1,6 @@
 #include "pessoa.h"
 
-Pessoa::Pessoa(string nome, unsigned int id) : nome(nome), id(id) {
+Pessoa::Pessoa(string nome, unsigned int id) : id(id), nome(nome) {
 }
 
 string Pessoa::getNome() const {
@@ -19,7 +19,7 @@ string Tecnico::getProfissao() const {
 	return this->profissao;
 }
 
-Proprietario::Proprietario(string nome, size_t id, bool bMorador) :
+Proprietario::Proprietario(string nome, unsigned int id, bool bMorador) :
 		Pessoa(nome, id), bMorador(bMorador){
 }
 

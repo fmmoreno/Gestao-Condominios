@@ -11,19 +11,19 @@ using namespace std;
  */
 class Pessoa {
 protected:
-	unsigned int id;	 /**< ID da pessoa para facilitar na organizacao de todas as pessoas. */
-	string nome; 		/**< Nome da pessoa, completo ou nao. */
+	unsigned int id; /**< ID da pessoa para facilitar na organizacao de todas as pessoas. */
+	string nome; /**< Nome da pessoa, completo ou nao. */
 
 public:
 	/**
 	 * Contrutor de Pessoa.
 	 * @param nome string com nome da pessoa a criar.
-	 * @param id size_t com ID da pessoa a criar.
+	 * @param id unsigned int com ID da pessoa a criar.
 	 */
 	Pessoa(string nome, unsigned int id);
 	/**
 	 * Devolve ID de Pessoa.
-	 * @return size_t com ID de Pessoa.
+	 * @return unsigned int com ID de Pessoa.
 	 */
 	unsigned int getId() const;
 	/**
@@ -44,10 +44,10 @@ public:
 	/**
 	 * Construtor de Tecnico.
 	 * @param nome string com nome de Tecnico.
-	 * @param id size_t com ID de Tecnico.
+	 * @param id unsigned int com ID de Tecnico.
 	 * @param profissao string com profissão de Tecnico.
 	 */
-	Tecnico(string nome, size_t id, string profissao);
+	Tecnico(string nome, unsigned int id, string profissao);
 	/**
 	 * Devolve profissão de Tecnico.
 	 * @return string com a profissão de Tecnico
@@ -66,7 +66,7 @@ public:
 	/**
 	 * Construtor de Proprietario.
 	 * @param nome string com nome de Proprietario.
-	 * @param id size_t com ID de Proprietario.
+	 * @param id unsigned int com ID de Proprietario.
 	 * @param bMorador bool True se o proprietario for morador, False em caso contrário.
 	 */
 	Proprietario(string nome, unsigned int id, bool bMorador);
