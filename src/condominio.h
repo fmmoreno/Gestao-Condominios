@@ -29,9 +29,6 @@ public:
 	Condominio(unsigned int area, unsigned int andar, unsigned int taxa);
 };
 
-/**
- *
- */
 class Residencia: public Condominio {
 public:
 	Residencia(unsigned int area, unsigned int andar, unsigned int taxa);
