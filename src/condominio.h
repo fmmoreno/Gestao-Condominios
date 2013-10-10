@@ -29,9 +29,6 @@ public:
 	Condominio(unsigned int area, unsigned int andar, unsigned int taxa);
 };
 
-/**
- *
- */
 class Residencia: public Condominio {
 public:
 	Residencia(unsigned int area, unsigned int andar, unsigned int taxa);
@@ -46,6 +43,7 @@ class Loja: public Condominio {
 public:
 	Loja(unsigned int area, unsigned int andar, unsigned int taxa);
 };
+
 
 
 #endif /* CONDOMINIO_H_ */

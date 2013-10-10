@@ -23,3 +23,4 @@ Escritorio::Escritorio(unsigned int area, unsigned int andar, unsigned int taxa)
  */
 Loja::Loja(unsigned int area, unsigned int andar, unsigned int taxa):
 		Condominio(area,andar,taxa) {}
+
